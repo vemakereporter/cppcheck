@@ -1,5 +1,5 @@
 {
-    "script": "naming",
+    "script": "addons/naming.py",
     "args": [
         "--private-member-variable=m[A-Z].*"
         "--var=[a-z].*",
