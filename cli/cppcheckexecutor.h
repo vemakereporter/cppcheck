@@ -160,17 +160,17 @@ private:
     /**
      * Pointer to current settings; set while check() is running.
      */
-    const Settings* _settings;
+    const Settings* mSettings;
 
     /**
      * Used to filter out duplicate error messages.
      */
-    std::set<std::string> _errorList;
+    std::set<std::string> mShownErrors;
 
     /**
      * Filename associated with size of file
      */
-    std::map<std::string, std::size_t> _files;
+    std::map<std::string, std::size_t> mFiles;
 
     /**
      * Report progress time
@@ -185,12 +185,12 @@ private:
     /**
      * Error output
      */
-    std::ofstream *errorOutput;
+    std::ofstream *mErrorOutput;
 
     /**
      * Has --errorlist been given?
      */
-    bool errorlist;
+    bool mShowAllErrors;
 };
 
 #endif // CPPCHECKEXECUTOR_H
